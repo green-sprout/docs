@@ -62,6 +62,7 @@ The document includes the following types of testing:
 
 - Unit testing
 - Integration testing
+- Data Consistency Tests
 - API testing
 
 Excluded from this plan are tests related to performance, user interface, scalability and usability.
@@ -104,22 +105,14 @@ The purpose is to verify that all integrated components of the application work 
 
 The motivation for unit testing is to ensure that individual components function correctly in isolation, while integration testing validates the seamless interaction of these components within the overall system. Both are critical to ensuring reliability and robustness before release.
 
----
-# **Done Until here**
----
 ## 3. Target Test Items
 
 - Server backend (and APIs)
-- Database 
+- Database Interaction
 
 ## 4. Outline of Planned Tests
 
 ### 4.1 Outline of Test Inclusions
-
-*Frontend: Android Client*:
-
-- UI testing of views/fragments
-- Unit testing
 
 *Backend: Spring Boot Application*:
 
@@ -127,13 +120,18 @@ The motivation for unit testing is to ensure that individual components function
 - Integration testing
 - Api testing
 
-![Testing overview](./testing_overview.png)  
+*Database (PostgreSQL)*
 
-The tests themself will not be tested and will not account into code coverage.
+- Integration Tests
+- Data Consistency Tests
 
 ### 4.2 Outline of Other Candidates for Potential Inclusion
 
 n/a
+
+---
+# **------- Done Until here -------**
+---
 
 ### 4.3 Outline of Test Exclusions
 
