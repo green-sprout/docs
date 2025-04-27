@@ -131,6 +131,7 @@ n/a
 
 ---
 # **------- Done Until here -------**
+# **------- This next part needs more Checking --------**
 ---
 
 ### 4.3 Outline of Test Exclusions
@@ -150,29 +151,30 @@ Because of time and resource constraints we will not do:
 
 Unit testing ensures, that the tested sourcecode works as expected. Therefore small parts of the sourcecode are tested independently.
 
-|                       | Description                                                         |
-|-----------------------|---------------------------------------------------------------------|
-|Technique Objective    | Ensure that the implemented code works as expected                  |
-|Technique              | Implement test methods using JUnit Framework (Frontend & Backend)   |
-|Oracles                | Test execution logs results to the command line, logs in CI/CD Tool (Travis) |
-|Required Tools         | JUnit 4 & 5 Dependencies in Frontend and Backend                    |
-|Success Criteria       | All tests pass. Coverage is above 10% (Frontend) / 60% (Backend)    |
-|                       | CI/CD Pipeline with test stages for Frontend and Backend: [Travis CI](https://travis-ci.com/nilskre/CommonPlayground)|
-|Special Considerations | -                                                                   |
+|                        | Description                                                                                 |
+| ---------------------- | ------------------------------------------------------------------------------------------- |
+| Technique Objective    | Ensure that the implemented code works as expected                                          |
+| Technique              | Implement test methods using the JUnit 5 Framework (Backend)                                |
+| Oracles                | Test execution logs results to the command line, logging manually ( for now, to be changed) |
+| Required Tools         | JUnit 5 dependencies in our Backend                                                         |
+| Success Criteria       | All tests pass. Coverage is above 66% (2/3, Backend)                                        |
+|                        | CI/CD Pipeline: Github Actions                                                              |
+| Special Considerations | -                                                                                           |
 
 #### 5.1.2 Integration Testing (API Testing)
 
 Api Testing is part of integration testing. Integration tests test multiple modules of an application together. The main goal of Api testing is to ensure, that the provided Apis of the Backend behave as expected.
 
-|                       | Description                                                          |
-|-----------------------|----------------------------------------------------------------------|
-|Technique Objective    | Test the provided Apis with Cucumber                                 |
-|Technique              | For every meaningful api a Gherkin `.feature` exists and the steps are implemented.  |            |
-|Oracles                | Test execution logs results to the command line, Logs in CI/CD Tool (Travis) |
-|Required Tools         | JUnit, Cucumber, Rest assured, Hamcrest                                     |
-|Success Criteria       | All tests pass. Coverage is above 60%                                |
-|                       | CI/CD Pipeline with test stages for Frontend and Backend: [Travis CI](https://travis-ci.com/nilskre/CommonPlayground) |
-|Special Considerations | -                                                                    |
+
+|                        | Description                                                                                 |
+| ---------------------- | ------------------------------------------------------------------------------------------- |
+| Technique Objective    | Test API-Requests                                                                           |
+| Technique              | Usage of Mock-API-Requests                                                                  |
+| Oracles                | Test execution logs results to the command line, logging manually ( for now, to be changed) |
+| Required Tools         | JUnit                                                                                       |
+| Success Criteria       | All tests pass. Coverage is above 66% (2/3)                                                 |
+|                        | CI/CD Pipeline: Github Actions                                                              |
+| Special Considerations | -                                                                                           |
 
 ## 6. Entry and Exit Criteria
 
@@ -190,11 +192,22 @@ n/a
 
 ## 7.1 Test Evaluation Summaries
 
-The project owns a certain amount of tests in the Frontend and Backend. Each pushed commit triggers our CI/CD Pipeline, which builds the application and executes the tests. Furthermore a code analysis with Codacy is triggered. We use a monorepo which includes the docs and the sourcecode for our Backend and Frontend. That´s why we have one CI/CD Pipeline for our whole project. 
+The project owns a certain amount of tests in the Backend. ~~Each pushed commit triggers our CI/CD Pipeline, which builds the application and executes the tests.~~
 
-Continuous Integration/Delivery/Deployment Pipeline based on Travis CI: [Travis CI](https://travis-ci.com/nilskre/CommonPlayground) [![Build Status](https://travis-ci.com/nilskre/CommonPlayground.svg?branch=master)](https://travis-ci.com/nilskre/CommonPlayground)
+`Tests werden manuell getriggert`
 
-Code Analysis with Codacy: [Codacy](https://app.codacy.com/project/DRiXD/CommonPlayground/dashboard) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/aff81896be354fc48280efd8135fb3ef)](https://app.codacy.com/app/DRiXD/CommonPlayground?utm_source=github.com&utm_medium=referral&utm_content=nilskre/CommonPlayground&utm_campaign=Badge_Grade_Settings)
+~~Furthermore a code analysis with Codacy is triggered.~~
+
+`Machen wir irgendeine Code-Analyse?`
+
+We use a monorepo which includes the docs and the sourcecode for our Backend and Frontend. ~~That´s why we have one CI/CD Pipeline for our whole project. ~~
+
+~~Continuous Integration/Delivery/Deployment Pipeline based on Travis CI: [Travis CI](https://travis-ci.com/nilskre/CommonPlayground) [![Build Status](https://travis-ci.com/nilskre/CommonPlayground.svg?branch=master)](https://travis-ci.com/nilskre/CommonPlayground)~~
+
+~~Code Analysis with Codacy: [Codacy](https://app.codacy.com/project/DRiXD/CommonPlayground/dashboard) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/aff81896be354fc48280efd8135fb3ef)](https://app.codacy.com/app/DRiXD/CommonPlayground?utm_source=github.com&utm_medium=referral&utm_content=nilskre/CommonPlayground&utm_campaign=Badge_Grade_Settings)~~
+
+
+`Hier verweisen die auf Graphiken, die zeigen wie die Tests erfolgreich durchlaufen`
 
 CI/CD Pipeline stages: Build, Test, Deploy(only on the master branch):  
 ![CI/CD Pipeline stages: Build, Test, Deploy(only on the master branch) ](./CICD_stages.png)  
@@ -207,16 +220,17 @@ Backend IDE test execution:
 
 ## 7.2 Reporting on Test Coverage
 
-For reporting our test coverage we use Jacoco and Codacy. 
-
-Code Test Coverage: [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/7fdcfeca10b94f4c9b6bc1a809669c2b)](https://www.codacy.com/app/CommonPlayground/CommonPlayground?utm_source=github.com&utm_medium=referral&utm_content=nilskre/CommonPlayground&utm_campaign=Badge_Coverage)
+For reporting our test coverage, we currently rely on manual test reports.
+`Sollen wir uns hier noch ein Tool suchen?`
 
 ## 7.3 Perceived Quality Reports
 
-The code quality tool is Codacy. [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7fdcfeca10b94f4c9b6bc1a809669c2b)](https://www.codacy.com/app/CommonPlayground/CommonPlayground?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nilskre/CommonPlayground&amp;utm_campaign=Badge_Grade)
+Currently, there is no Code Quality Tool in use.
+`Sollen wir uns hier noch ein Tool suchen?`
 
 ## 7.4 Incident Logs and Change Requests
 
+`Bekommen wir mit Github Actions auch solche Fehlermeldungen? Generell diesen Abschnitt anpassen`
 We integrated the tools mentioned above into our GitHub pull request workflow. If a build fails this is directly visible in the PR. Furthermore the team is alerted by an email.
 The screenshot shows the integration:
 
@@ -224,12 +238,14 @@ The screenshot shows the integration:
 
 ## 7.5 Smoke Test Suite and Supporting Test Scripts
 
+`Ermöglicht Github Actions soetwas?`
 The automated test execution in our CI/CD Pipeline enables regression testing. With this approach it is clearly visible when changes break existing functions and affect the correct behaviour of the application.
 
 ## 8. Testing Workflow
 
+`Erlaubt Github Actions das triggern der Tests?`
 1) Local testing in the IDE
-2) Commit and Push triggers build and test exection in the CI/CD Pipeline
+2) Commit and Push triggers build and test execption in the CI/CD Pipeline
 3) Each PR triggers the pipeline (build and test)
 4) Before the automated deployment the build and test stages are executed
 
@@ -238,45 +254,48 @@ The automated test execution in our CI/CD Pipeline enables regression testing. W
 ### 9.1 Base System Hardware
 
 The following table sets forth the system resources for the test effort presented in this Test Plan.
+`Annahme: Wir testen unsere WebApp auch mit nem Smartphone`
 
-| Resource              | Quantity | Name and Type                |
-|-----------------------|:--------:|------------------------------|
-| CI/CD server          |    1     | Travis CI Cloud              |
-| local test machine    |    1     | notebook (Inga, Celina, Denis, Nils)       |
-| Android test device   |    1     | Android device (Inga, Celina, Denis, Nils) |
+| Resource            | Quantity | Name and Type                                      |
+| ------------------- | :------: | -------------------------------------------------- |
+| CI/CD server        |    1     | Github Actions                                     |
+| local test machine  |    1     | notebook (Jonas,Safae,Samuel,Paula,Valentin)       |
+| Android test device |    1     | Android device (Jonas,Safae,Samuel,Paula,Valentin) |
 
 ### 9.2 Base Software Elements in the Test Environment
 
 The following base software elements are required in the test environment for this Test Plan.
+`Die andere Gruppe hatte hier auch unter anderem Android Studio verwendet, evtl. kann man das Aufgreifen? `
 
-| Software Element Name |  Type and Other Notes                        |
-|-----------------------|----------------------------------------------|
-| Android Studio        | Test Runner / IDE                            |
-| IntelliJ              | Test Runner / IDE                            |
-| JUnit 4 & 5           | Unit testing library                         |
-| Espresso              | UI testing library                           |
-| Cucumber              | human readable test definitions              |
+| Software Element Name | Type and Other Notes |
+| --------------------- | -------------------- |
+| IntelliJ              | Test Runner / IDE    |
+| JUnit  5              | Unit testing library |
+
 
 ### 9.3 Productivity and Support Tools
 
 The following tools will be employed to support the test process for this Test Plan.
 
-| Tool Category or Type | Tool Brand Name                              |
-|-----------------------|----------------------------------------------|
-| Repository            | [github.com](http://github.com/)             |
-| Test Coverage Monitor | [codacy](https://app.codacy.com/)            |
-| CI/CD Service         | [Travis CI](http://travis-ci.org/)           |
-| Metrics Tool          | [codacy](https://app.codacy.com/)            |
+`Für Metrics und TCM hatten die Codacy verwendet. Wir machen das ja gerade noch irwie händisch`
+
+| Tool Category or Type | Tool Brand Name                    |
+| --------------------- | ---------------------------------- |
+| Repository            | [github.com](http://github.com/)   |
+| Test Coverage Monitor |                                    |
+| CI/CD Service         | [Travis CI](http://travis-ci.org/) |
+| Metrics Tool          |                                    |
 
 ## 10. Responsibilities, Staffing, and Training Needs
 
 ### 10.1 People and Roles
 
-| Role          | Person Assigned |  Specific Responsibilities or Comments |
-|---------------|:--------------:|----------------------------------------|
-| Test Manager | Denis, Inga | Provides management oversight. |
-| Test Designer | Denis, Celina | Defines the technical approach to the implementation of the test effort. |
-| Test System Administrator | Nils | Ensures test environment and assets are managed and maintained. |
+
+| Role                      | Person Assigned  | Specific Responsibilities or Comments                                    |
+| ------------------------- | :--------------: | ------------------------------------------------------------------------ |
+| Test Manager              |   Safae, Jonas   | Provides management oversight.                                           |
+| Test Designer             |   Safae, Paula   | Defines the technical approach to the implementation of the test effort. |
+| Test System Administrator | Valentin, Samuel | Ensures test environment and assets are managed and maintained.          |
 
 ### 10.2 Staffing and Training Needs
 
@@ -284,15 +303,15 @@ n/a
 
 ## 11. Iteration Milestones
 
-We want to keep over 20% code coverage.
+We want to keep over 66% code coverage.
 
 ## 12. Risks, Dependencies, Assumptions, and Constraints
 
-| Risk | Mitigation Strategy | Contingency (Risk is realized) |
-|------|---------------------|--------------------------------|
-| Code has lots of side effects | Refactor code (Clean Code principles) | publish new refactored tests |
-| Test Runner is not able to execute tests | Use standard libraries which include working Test Runner | fix test execution configuration |
-| UI tests fail | Refactor test | publish refactored test and restart |
+| Risk                                     | Mitigation Strategy                                      | Contingency (Risk is realized)      |
+| ---------------------------------------- | -------------------------------------------------------- | ----------------------------------- |
+| Code has lots of side effects            | Refactor code (Clean Code principles)                    | publish new refactored tests        |
+| Test Runner is not able to execute tests | Use standard libraries which include working Test Runner | fix test execution configuration    |
+| UI tests fail                            | Refactor test                                            | publish refactored test and restart |
 
 ## 13. Management Process and Procedures
 
