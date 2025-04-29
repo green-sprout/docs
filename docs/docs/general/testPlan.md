@@ -220,7 +220,10 @@ The automated test execution in our CI/CD Pipeline enables regression testing. W
 
 ## 8. Testing Workflow
 
-`Erlaubt Github Actions das triggern der Tests?`
+Currently, the Test-Workflow is as follows.:
+1) Local testing in the IDE before a commit - Results are manually logged
+
+Ideally, the Test-Workflow will eventually take the following form or be similar to it.:
 1) Local testing in the IDE
 2) Commit and Push triggers build and test execption in the CI/CD Pipeline
 3) Each PR triggers the pipeline (build and test)
