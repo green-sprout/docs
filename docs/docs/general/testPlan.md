@@ -129,11 +129,6 @@ The motivation for unit testing is to ensure that individual components function
 
 n/a
 
----
-# **------- Done Until here -------**
-# **------- This next part needs more Checking --------**
----
-
 ### 4.3 Outline of Test Exclusions
 
 Because of time and resource constraints we will not do:
@@ -204,6 +199,11 @@ For reporting our test coverage, we currently rely on manual test reports.
 ## 7.3 Perceived Quality Reports
 
 Currently, there is no Code Quality Tool in use but is subject to change. All code is reviewed by hand.
+
+---
+# **------- Done Until here -------**
+# **------- This next part needs more Checking --------**
+---
 
 ## 7.4 Incident Logs and Change Requests
 
