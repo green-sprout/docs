@@ -192,31 +192,10 @@ n/a
 
 ## 7.1 Test Evaluation Summaries
 
-The project owns a certain amount of tests in the Backend. ~~Each pushed commit triggers our CI/CD Pipeline, which builds the application and executes the tests.~~
+The project owns a certain amount of tests in the Backend. The plan is that each pushed commit triggers our CI/CD Pipeline, which builds the application and executes the tests.
+As of right now however, all testing has to be manually triggered.
 
-`Tests werden manuell getriggert`
-
-~~Furthermore a code analysis with Codacy is triggered.~~
-
-`Machen wir irgendeine Code-Analyse?`
-
-We use a monorepo which includes the docs and the sourcecode for our Backend and Frontend. ~~That´s why we have one CI/CD Pipeline for our whole project. ~~
-
-~~Continuous Integration/Delivery/Deployment Pipeline based on Travis CI: [Travis CI](https://travis-ci.com/nilskre/CommonPlayground) [![Build Status](https://travis-ci.com/nilskre/CommonPlayground.svg?branch=master)](https://travis-ci.com/nilskre/CommonPlayground)~~
-
-~~Code Analysis with Codacy: [Codacy](https://app.codacy.com/project/DRiXD/CommonPlayground/dashboard) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/aff81896be354fc48280efd8135fb3ef)](https://app.codacy.com/app/DRiXD/CommonPlayground?utm_source=github.com&utm_medium=referral&utm_content=nilskre/CommonPlayground&utm_campaign=Badge_Grade_Settings)~~
-
-
-`Hier verweisen die auf Graphiken, die zeigen wie die Tests erfolgreich durchlaufen`
-
-CI/CD Pipeline stages: Build, Test, Deploy(only on the master branch):  
-![CI/CD Pipeline stages: Build, Test, Deploy(only on the master branch) ](./CICD_stages.png)  
-Integration of CI/CD Pipeline pipeline with github:  
-![Integration of CI/CD Pipeline pipeline with github](./CICD_github_commits.png)  
-Frontend IDE test execution:  
-![Frontend IDE test execution](./frontend_test_execution.png)  
-Backend IDE test execution:  
-![Backend IDE test execution](./backend_test_execution.png)
+We use a monorepo which includes the docs and the sourcecode for our Backend and Frontend. We plan on having one CI/CD Pipeline for our entire project.
 
 ## 7.2 Reporting on Test Coverage
 
