@@ -200,12 +200,10 @@ We use a monorepo which includes the docs and the sourcecode for our Backend and
 ## 7.2 Reporting on Test Coverage
 
 For reporting our test coverage, we currently rely on manual test reports.
-`Sollen wir uns hier noch ein Tool suchen?`
 
 ## 7.3 Perceived Quality Reports
 
-Currently, there is no Code Quality Tool in use.
-`Sollen wir uns hier noch ein Tool suchen?`
+Currently, there is no Code Quality Tool in use but is subject to change. All code is reviewed by hand.
 
 ## 7.4 Incident Logs and Change Requests
 
