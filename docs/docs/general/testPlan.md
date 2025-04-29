@@ -187,10 +187,18 @@ n/a
 
 ## 7.1 Test Evaluation Summaries
 
-The project owns a certain amount of tests in the Backend. The plan is that each pushed commit triggers our CI/CD Pipeline, which builds the application and executes the tests.
-As of right now however, all testing has to be manually triggered.
+The current version of the project includes only backend testing, more specifically JUnit 5 tests with mocking for the Spring boot backend classes. The final version of the project is so planned, so that integration tests are also implemented
+and the automation is realised through the implementation of CI/CD Pipelines. These would eventually be responsible for the evaluation of the tests, which would take place every time changes are pushed into the 
+code repository, GitHub Actions being the chosen platform for the workflow.
 
-We use a monorepo which includes the docs and the sourcecode for our Backend and Frontend. We plan on having one CI/CD Pipeline for our entire project.
+At this point of the project Unit tests can be manually and locally evaluated through either starting the tests from the IDE oder executing the following command: `mvn test`
+
+As shown in the screenshot below, the IDE specifies the number of passed tests as well as gives logs and where applicable warnings/error messages. 
+The content of the currently implemented test classes, for example the OsmControllerTest Class, can be explained as followed: 
+
+The OsmControllerTest class is a unit test designed to validate the functionality of the OsmController class, specifically its getNodes method. It uses Mockito to mock the OsmService dependency, allowing for controlled testing of the controller's behavior without relying on the actual service implementation. The test class includes two test cases: one that verifies a successful response when valid parameters (an amenity type and a list of coordinates) are provided, ensuring that the response status is 200 and the body contains the expected JSON data; and another that checks the handling of invalid coordinates, asserting that the response status is 400 and the body contains an appropriate error message. The setup method initializes the mocks before each test is executed.
+
+![OsmControllerTestScreenshot](https://github.com/green-sprout/docs/blob/main/docs/assets/general/TestScreenshot.PNG)
 
 ## 7.2 Reporting on Test Coverage
 
@@ -198,25 +206,15 @@ For reporting our test coverage, we currently rely on manual test reports.
 
 ## 7.3 Perceived Quality Reports
 
-Currently, there is no Code Quality Tool in use but is subject to change. All code is reviewed by hand.
-
----
-# **------- Done Until here -------**
-# **------- This next part needs more Checking --------**
----
+Perceived quality reports for the GreenSprout application will focus on the results of the JUnit tests and integration tests conducted during the development process. If any reports are generated (when applicable), they will be generated manually, providing the development team with a clear overview of the application's quality and stability. The analysis will include a review of incidents related to test failures and any associated change requests, ensuring that the team can address quality concerns effectively.
 
 ## 7.4 Incident Logs and Change Requests
 
-`Bekommen wir mit Github Actions auch solche Fehlermeldungen? Generell diesen Abschnitt anpassen`
-We integrated the tools mentioned above into our GitHub pull request workflow. If a build fails this is directly visible in the PR. Furthermore the team is alerted by an email.
-The screenshot shows the integration:
-
-![GitHub PR integrated tools](./integrated_tools.png)
+Any noticed errors during the execution of tests either locally or through triggering the CI/CD Pipeline will be immediately reported to team members, and fixing the mistakes will be added as a ticket for the following sprint.
 
 ## 7.5 Smoke Test Suite and Supporting Test Scripts
 
-`Ermöglicht Github Actions soetwas?`
-The automated test execution in our CI/CD Pipeline enables regression testing. With this approach it is clearly visible when changes break existing functions and affect the correct behaviour of the application.
+The smoke test suite for the GreenSprout application will consist of a set of automated tests designed to verify the core functionalities of the application's backend. Supporting test scripts will be developed using JUnit and Mockito for unit testing, along with integration tests to ensure that different components of the application work together seamlessly. The smoke test suite will be executed as part of the CI/CD pipeline using GitHub Actions, allowing for immediate feedback on the stability of new builds and helping to detect regressions in product quality early in the development process.
 
 ## 8. Testing Workflow
 
@@ -259,7 +257,7 @@ The following tools will be employed to support the test process for this Test P
 | --------------------- | ---------------------------------- |
 | Repository            | [github.com](http://github.com/)   |
 | CI/CD Service         | [Github Actions](https://docs.github.com/en/actions/writing-workflows/quickstart) |
-                    
+
 
 ## 10. Responsibilities, Staffing, and Training Needs
 
