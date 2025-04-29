@@ -231,7 +231,6 @@ The automated test execution in our CI/CD Pipeline enables regression testing. W
 ### 9.1 Base System Hardware
 
 The following table sets forth the system resources for the test effort presented in this Test Plan.
-`Annahme: Wir testen unsere WebApp auch mit nem Smartphone`
 
 | Resource            | Quantity | Name and Type                                      |
 | ------------------- | :------: | -------------------------------------------------- |
@@ -242,7 +241,6 @@ The following table sets forth the system resources for the test effort presente
 ### 9.2 Base Software Elements in the Test Environment
 
 The following base software elements are required in the test environment for this Test Plan.
-`Die andere Gruppe hatte hier auch unter anderem Android Studio verwendet, evtl. kann man das Aufgreifen? `
 
 | Software Element Name | Type and Other Notes |
 | --------------------- | -------------------- |
@@ -254,14 +252,11 @@ The following base software elements are required in the test environment for th
 
 The following tools will be employed to support the test process for this Test Plan.
 
-`Für Metrics und TCM hatten die Codacy verwendet. Wir machen das ja gerade noch irwie händisch`
-
 | Tool Category or Type | Tool Brand Name                    |
 | --------------------- | ---------------------------------- |
 | Repository            | [github.com](http://github.com/)   |
-| Test Coverage Monitor |                                    |
-| CI/CD Service         | [Travis CI](http://travis-ci.org/) |
-| Metrics Tool          |                                    |
+| CI/CD Service         | [Github Actions](https://docs.github.com/en/actions/writing-workflows/quickstart) |
+                    
 
 ## 10. Responsibilities, Staffing, and Training Needs
 
