@@ -1,55 +1,92 @@
 # Technical Review
 **Datum:** 27.05.25
 
-**Dauer:** 8:32 **/** 8:57 
+**Dauer:** 8:32 **/** 9:17 
 
-**Teilnehmer:**
+**Teilnehmer**
 Moderation: Safae K./Samuel B.
 
 Notizen: Samuel B.
 
-Code Review (Team Intern): Safae K.
+Code Review (Team Intern): Safae K./Jonas S./Valentin W./Paula K./Samuel B.
 
-Code Review (Extern): Lukas S.
+Code Review (Extern): Lukas S. (Team Restaurant Reservierung)
 
-Projektmanagement Review: Safae K. / Samuel B.
+Projektmanagement Review: Safae K./Samuel B.
 
-**Ziel / Fokus:**
+**Ziel / Fokus**
 
-Ausgewählte Abschnitte: 
+- Ausgewählte Abschnitte: 
 	Backend, generell
 
-Was wird untersucht?
+- Was wird untersucht?
 	Sicherheit + Generelle Übersicht
 
-Warum die Wahl?
+- Warum die Wahl?
 	Die Wahl fiel auf das Backend, da wir hier ein höheres Niveau im Rahmen der Review aufbringen konnten und auch unser externer Review-Partner sich besser mit dem Thema auskennt.
 
-**Komponenten für die Review:**
+**Komponenten für die Review**
+- Login/Registierung Komponente
+- OpenStreetAPI Daten Aurufen Komponente
+- Unit Tests
+- Datenbankverbindung
+- Allgemeine Struktur
+
+**Kriterien für die Review**
+- Codequalität
+- Security
+- Fehlerbehandlung
+
+**Review Methodik**
+
+Walkthrough + Code Review
+
+**Ergebnis**
+- Codequalität:
+    - zumeist hohe Codequalität.
+    - Kernelmente des Systems werden getestet.
+- Security:
+    - `CorsConfig.java` - anyRequest().permitAll()
+    - `JWTService.java` - Secret Key sollte ausgelagert werden.
+- Fehlerbehandlung:
+    - `AuthService.java`, `OsmController.java` weisen eine umfangreiche Fehlerbehandlung auf
+  
+
+# External Review
+
+
+**Komponenten für die Review**
 - Login/Registierung Komponente
  - OpenStreetAPI Daten Aurufen Komponente
 - Unit Tests
 - Datenbankverbindung
 - Allgemeine Struktur
 
-**Kriterien für die Review:**
+**Kriterien für die Review**
 - Codequalität
 - Security
-**Review Methodik:**
+- Fehlerbehandlung
+  
+**Review Methodik**
 
 Walkthrough + Code Review
 
-**Ergebnis:**
-`Sicherheitstechnisch ist vielleicht noch etwas Bedarf da, das man da eben noch ein paar Sachen fixt - eben so die CORS-Sachen. Ansonsten solide Projektstruktur.`
+**Ergebnis**
+- Codequalität:
+    - Performancerelevante Quellcodesegmente weisen eine durchgehend hohe Codequalität aus.
+    - Tests decken sicherheitsrelevante Kernkomponenten der Anwendung ausreichend ab.
+- Security:
+    - `SecurityConfig.java` - CORS-Sicherheitsstandards müssen einhalten werden (.permitAll()-Methode)
+    - `CorsConfig.java` - keine beliebigen Headers und any-Origins akzeptieren
+    - `AuthService.java` - Implementieren von Input-Sanitisation-Mechanismen für benutzerspezifische Daten.
+    - `JWTService.java` - Datei enthält Authentifizierungsschlüssel, welcher NICHT in der Datei stehen sollte.
+- Fehlerbehandlung:
+    - `AuthController.java` - hat kein Error-Handling
+    - ansonsten weitreichendes Error Handling
+
+**Bemerkung**
+
+`Sicherheitstechnisch ist vielleicht noch etwas Bedarf da, das man da noch ein paar Sachen fixt. Ansonsten solide Projektstruktur.`
 
 
-
-`Kommentare von Lukas`
-`Cors alle Origins Erlauben ist vermutlich nicht so sicher`
-`Ist es sinnvoll, alle headers zu erlauben?`
-`Security Config - Welche Implication hat das ".permitAll()" ?`
-`Auth Controller hat kein Error-Handling`
-`Default Errors wenn zb. 2x die gleiche Email angegeben wird`
-`AuthService.java - machen Input-Sanitisation`
-`JWTService.java - Datei hat einen Secret Key!! Dieser sollte NICHT in der Datei drinn stehen!!!`
 
