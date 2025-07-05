@@ -83,7 +83,7 @@ The frontend includes the following components:
 - Sends requests to the backend and the OSM integration to update map data.  
 
 #### **Filters**  
-- Allows users to select search criteria such as cuisine, dietary preferences, or ratings.  
+- Allows users to select search criteria such as cuisine pr dietary preferences.  
 - Sends the selected filter criteria to the backend and directly to the OSM integration to retrieve filtered data.  
 
 #### **User Management**  
