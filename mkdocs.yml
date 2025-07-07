@@ -53,5 +53,6 @@ nav:
 - TestPlan: docs/general/testPlan.md
 - UCRS Filter Map: docs/general/UCRS_FilterMap.md
 - UCRS View Restaurant: docs/general/UCRS_ViewRestaurant.md
+- Refactoring: docs/general/Refactoring.md
 - Sprintmeetings:
   - Sprint 2: docs/sprintmeetings/sprint2.md
