@@ -54,5 +54,12 @@ nav:
 - UCRS Filter Map: docs/general/UCRS_FilterMap.md
 - UCRS View Restaurant: docs/general/UCRS_ViewRestaurant.md
 - Refactoring: docs/general/Refactoring.md
+- Risikomanagement: docs/general/Risikomanagement.pdf
+- Projekt Retrospektive: docs/general/Projekt\ Retrospektive.pdf
+- Präsentationen:
+  - Zwischenpräsentation: docs/general/Zwischenpräsentation.pdf
+  - Zwischenpräsentation Handout: docs/general/Handout\ Zwischenpräsentation.pdf
+  - Abschlusspräsentation: docs/general/Abschlusspräsentation.pdf
+  - Abschlusspräsentation Handout: docs/general/Handout\ Abschlusspräsentation.pdf
 - Sprintmeetings:
   - Sprint 2: docs/sprintmeetings/sprint2.md
