@@ -58,8 +58,8 @@ nav:
 - Projekt Retrospektive: docs/general/ Retrospektive.pdf
 - Präsentationen:
   - Zwischenpräsentation: docs/general/Zwischenpräsentation.pdf
-  - Zwischenpräsentation Handout: docs/general/Handout\ Zwischenpräsentation.pdf
+  - Zwischenpräsentation Handout: "docs/general/Handout Zwischenpräsentation.pdf"
   - Abschlusspräsentation: docs/general/Abschlusspräsentation.pdf
-  - Abschlusspräsentation Handout: docs/general/Handout\ Abschlusspräsentation.pdf
+  - Abschlusspräsentation Handout: "docs/general/Handout Abschlusspräsentation.pdf"
 - Sprintmeetings:
   - Sprint 2: docs/sprintmeetings/sprint2.md
