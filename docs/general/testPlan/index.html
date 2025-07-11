@@ -1,0 +1,1985 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../sad/">
+      
+      
+        <link rel="next" href="../UCRS_FilterMap/">
+      
+      
+      <link rel="icon" href="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/templates/.icons/material/sprout.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>TestPlan - Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#test-plan" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Docs" class="md-header__button md-logo" aria-label="Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 22v-2s5-2 10-2 10 2 10 2v2zm9.3-12.9c-1.2-3.9-7.3-3-7.3-3s.2 7.8 5.9 6.6C9.5 9.8 8 9 8 9c2.8 0 3 3.4 3 3.4V17h2v-4.2s0-3.9 3-4.9c0 0-2 3-2 5 7 .7 7-8.9 7-8.9s-8.9-1-9.7 5.1"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TestPlan
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Docs" class="md-nav__button md-logo" aria-label="Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 22v-2s5-2 10-2 10 2 10 2v2zm9.3-12.9c-1.2-3.9-7.3-3-7.3-3s.2 7.8 5.9 6.6C9.5 9.8 8 9 8 9c2.8 0 3 3.4 3 3.4V17h2v-4.2s0-3.9 3-4.9c0 0-2 3-2 5 7 .7 7-8.9 7-8.9s-8.9-1-9.7 5.1"/></svg>
+
+    </a>
+    Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../srs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SRS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SAD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    TestPlan
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    TestPlan
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Purpose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Scope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-intended-audience" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Intended Audience
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-document-terminology-and-acronyms" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 Document Terminology and Acronyms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 References
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-evaluation-mission-and-test-motivation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Evaluation Mission and Test Motivation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Evaluation Mission and Test Motivation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Background
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-evaluation-mission" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Evaluation Mission
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-test-motivators" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Test Motivators
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-target-test-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Target Test Items
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-outline-of-planned-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Outline of Planned Tests
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Outline of Planned Tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-outline-of-test-inclusions" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Outline of Test Inclusions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-outline-of-other-candidates-for-potential-inclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Outline of Other Candidates for Potential Inclusion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-outline-of-test-exclusions" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Outline of Test Exclusions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-test-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Test Approach
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Test Approach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-testing-techniques-and-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Testing Techniques and Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 Testing Techniques and Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#511-unit-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.1 Unit Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-integration-testing-api-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.2 Integration Testing (API Testing)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-entry-and-exit-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Entry and Exit Criteria
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Entry and Exit Criteria">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-test-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Test Plan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1 Test Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#611-test-plan-entry-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.1 Test Plan Entry Criteria
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#612-test-plan-exit-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.2 Test Plan Exit Criteria
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-deliverables" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Deliverables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#71-test-evaluation-summaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Test Evaluation Summaries
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72-reporting-on-test-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Reporting on Test Coverage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#73-perceived-quality-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Perceived Quality Reports
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#74-incident-logs-and-change-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 Incident Logs and Change Requests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#75-smoke-test-suite-and-supporting-test-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5 Smoke Test Suite and Supporting Test Scripts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-testing-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Testing Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-environmental-needs" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Environmental Needs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Environmental Needs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-base-system-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1 Base System Hardware
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-base-software-elements-in-the-test-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2 Base Software Elements in the Test Environment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-productivity-and-support-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3 Productivity and Support Tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-responsibilities-staffing-and-training-needs" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Responsibilities, Staffing, and Training Needs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Responsibilities, Staffing, and Training Needs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-people-and-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.1 People and Roles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-staffing-and-training-needs" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.2 Staffing and Training Needs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-iteration-milestones" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Iteration Milestones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-risks-dependencies-assumptions-and-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Risks, Dependencies, Assumptions, and Constraints
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-management-process-and-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Management Process and Procedures
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UCRS_FilterMap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UCRS Filter Map
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UCRS_ViewRestaurant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UCRS View Restaurant
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Refactoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Refactoring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Risikomanagement.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Risikomanagement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Projekt%20Retrospektive.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Projekt Retrospektive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Qualitätsbericht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Präsentationen
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Präsentationen
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zwischenpr%C3%A4sentation.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Zwischenpräsentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Handout%20Zwischenpr%C3%A4sentation.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Zwischenpräsentation Handout
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Abschlusspr%C3%A4sentation.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Abschlusspräsentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Handout%20Abschlusspr%C3%A4sentation.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Abschlusspräsentation Handout
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Purpose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Scope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-intended-audience" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Intended Audience
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-document-terminology-and-acronyms" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 Document Terminology and Acronyms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 References
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-evaluation-mission-and-test-motivation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Evaluation Mission and Test Motivation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Evaluation Mission and Test Motivation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Background
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-evaluation-mission" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Evaluation Mission
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-test-motivators" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Test Motivators
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-target-test-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Target Test Items
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-outline-of-planned-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Outline of Planned Tests
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Outline of Planned Tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-outline-of-test-inclusions" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Outline of Test Inclusions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-outline-of-other-candidates-for-potential-inclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Outline of Other Candidates for Potential Inclusion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-outline-of-test-exclusions" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Outline of Test Exclusions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-test-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Test Approach
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Test Approach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-testing-techniques-and-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Testing Techniques and Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 Testing Techniques and Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#511-unit-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.1 Unit Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-integration-testing-api-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.2 Integration Testing (API Testing)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-entry-and-exit-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Entry and Exit Criteria
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Entry and Exit Criteria">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-test-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Test Plan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1 Test Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#611-test-plan-entry-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.1 Test Plan Entry Criteria
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#612-test-plan-exit-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.2 Test Plan Exit Criteria
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-deliverables" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Deliverables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#71-test-evaluation-summaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Test Evaluation Summaries
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72-reporting-on-test-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Reporting on Test Coverage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#73-perceived-quality-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Perceived Quality Reports
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#74-incident-logs-and-change-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 Incident Logs and Change Requests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#75-smoke-test-suite-and-supporting-test-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5 Smoke Test Suite and Supporting Test Scripts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-testing-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Testing Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-environmental-needs" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Environmental Needs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Environmental Needs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-base-system-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1 Base System Hardware
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-base-software-elements-in-the-test-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2 Base Software Elements in the Test Environment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-productivity-and-support-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3 Productivity and Support Tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-responsibilities-staffing-and-training-needs" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Responsibilities, Staffing, and Training Needs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Responsibilities, Staffing, and Training Needs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-people-and-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.1 People and Roles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-staffing-and-training-needs" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.2 Staffing and Training Needs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-iteration-milestones" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Iteration Milestones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-risks-dependencies-assumptions-and-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Risks, Dependencies, Assumptions, and Constraints
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-management-process-and-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Management Process and Procedures
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="test-plan">Test plan</h1>
+<ul>
+<li><a href="#test-plan">Test plan</a><ul>
+<li><a href="#1-introduction">1. Introduction</a><ul>
+<li><a href="#11-purpose">1.1 Purpose</a></li>
+<li><a href="#12-scope">1.2 Scope</a></li>
+<li><a href="#13-intended-audience">1.3 Intended Audience</a></li>
+<li><a href="#14-document-terminology-and-acronyms">1.4 Document Terminology and Acronyms</a></li>
+<li><a href="#15--references">1.5  References</a></li>
+</ul>
+</li>
+<li><a href="#2-evaluation-mission-and-test-motivation">2. Evaluation Mission and Test Motivation</a><ul>
+<li><a href="#21-background">2.1 Background</a></li>
+<li><a href="#22-evaluation-mission">2.2 Evaluation Mission</a></li>
+<li><a href="#23-test-motivators">2.3 Test Motivators</a></li>
+</ul>
+</li>
+<li><a href="#3-target-test-items">3. Target Test Items</a></li>
+<li><a href="#4-outline-of-planned-tests">4. Outline of Planned Tests</a><ul>
+<li><a href="#41-outline-of-test-inclusions">4.1 Outline of Test Inclusions</a></li>
+<li><a href="#42-outline-of-other-candidates-for-potential-inclusion">4.2 Outline of Other Candidates for Potential Inclusion</a></li>
+<li><a href="#43-outline-of-test-exclusions">4.3 Outline of Test Exclusions</a></li>
+</ul>
+</li>
+<li><a href="#5-test-approach">5. Test Approach</a><ul>
+<li><a href="#51-testing-techniques-and-types">5.1 Testing Techniques and Types</a><ul>
+<li><a href="#511-unit-testing">5.1.1 Unit Testing</a></li>
+<li><a href="#512-integration-testing-api-testing">5.1.2 Integration Testing (API Testing)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#6-entry-and-exit-criteria">6. Entry and Exit Criteria</a><ul>
+<li><a href="#61-test-plan">6.1 Test Plan</a><ul>
+<li><a href="#611-test-plan-entry-criteria">6.1.1 Test Plan Entry Criteria</a></li>
+<li><a href="#612-test-plan-exit-criteria">6.1.2 Test Plan Exit Criteria</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#7-deliverables">7. Deliverables</a><ul>
+<li><a href="#71-test-evaluation-summaries">7.1 Test Evaluation Summaries</a></li>
+<li><a href="#72-reporting-on-test-coverage">7.2 Reporting on Test Coverage</a></li>
+<li><a href="#73-perceived-quality-reports">7.3 Perceived Quality Reports</a></li>
+<li><a href="#74-incident-logs-and-change-requests">7.4 Incident Logs and Change Requests</a></li>
+<li><a href="#75-smoke-test-suite-and-supporting-test-scripts">7.5 Smoke Test Suite and Supporting Test Scripts</a></li>
+</ul>
+</li>
+<li><a href="#8-testing-workflow">8. Testing Workflow</a></li>
+<li><a href="#9-environmental-needs">9. Environmental Needs</a><ul>
+<li><a href="#91-base-system-hardware">9.1 Base System Hardware</a></li>
+<li><a href="#92-base-software-elements-in-the-test-environment">9.2 Base Software Elements in the Test Environment</a></li>
+<li><a href="#93-productivity-and-support-tools">9.3 Productivity and Support Tools</a></li>
+</ul>
+</li>
+<li><a href="#10-responsibilities-staffing-and-training-needs">10. Responsibilities, Staffing, and Training Needs</a><ul>
+<li><a href="#101-people-and-roles">10.1 People and Roles</a></li>
+<li><a href="#102-staffing-and-training-needs">10.2 Staffing and Training Needs</a></li>
+</ul>
+</li>
+<li><a href="#11-iteration-milestones">11. Iteration Milestones</a></li>
+<li><a href="#12-risks-dependencies-assumptions-and-constraints">12. Risks, Dependencies, Assumptions, and Constraints</a></li>
+<li><a href="#13-management-process-and-procedures">13. Management Process and Procedures</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="1-introduction">1. Introduction</h2>
+<h3 id="11-purpose">1.1 Purpose</h3>
+<p>The purpose of the Iteration Test Plan is to gather all of the information necessary to plan and control the test effort for a given iteration. It describes the approach to testing the software.
+This Test Plan for Green Sprout supports the following objectives:</p>
+<ul>
+<li>Identifies the issues to be addressed by the tests.</li>
+<li>Identifies the motivation and ideas behind the test areas to be covered.</li>
+<li>Outlines the testing approach to be used.</li>
+<li>Identifies the resources required and provides an estimate of the testing effort.</li>
+</ul>
+<h3 id="12-scope">1.2 Scope</h3>
+<p>This test plan outlines the tests designed to verify the functionality of the front-end and back-end of the application and the interaction between them.</p>
+<p>The document includes the following types of testing:</p>
+<ul>
+<li>Unit testing</li>
+<li>Integration testing</li>
+<li>Data Consistency Tests</li>
+<li>API testing</li>
+</ul>
+<p>Excluded from this plan are tests related to performance, user interface, scalability and usability.</p>
+<h3 id="13-intended-audience">1.3 Intended Audience</h3>
+<p>This test plan is written primarily for internal documentation purposes. It serves as a guideline for developers and as documentation for measuring compliance with quality requirements.</p>
+<h3 id="14-document-terminology-and-acronyms">1.4 Document Terminology and Acronyms</h3>
+<table>
+<thead>
+<tr>
+<th>Abbr</th>
+<th>Abbreviation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API</td>
+<td>Application Programmable Interface</td>
+</tr>
+<tr>
+<td>n/a</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>SRS</td>
+<td>Software Requirements Specification</td>
+</tr>
+</tbody>
+</table>
+<h3 id="15-references">1.5  References</h3>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th style="text-align: center;">Date</th>
+<th>Publishing organization</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SRS</td>
+<td style="text-align: center;">unknown</td>
+<td>Green Sprout</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-evaluation-mission-and-test-motivation">2. Evaluation Mission and Test Motivation</h2>
+<h3 id="21-background">2.1 Background</h3>
+<p>The primary reason for the testing effort outlined in this test plan is to validate the integration of the various components of the web-based restaurant discovery platform. Since the system relies on interactions between a dynamic front-end, a data-driven back-end, and third-party services such as map APIs, integration testing is essential to ensure that these components work together reliably.</p>
+<p>Without proper integration testing, issues may arise that are not visible in isolated unit tests, but could significantly impact the user experience.</p>
+<p>This testing phase will help identify interface mismatches and data inconsistencies across the system. A full description of the system architecture and features can be found in the <a href="../srs/">SRS</a> document.</p>
+<h3 id="22-evaluation-mission">2.2 Evaluation Mission</h3>
+<p>The purpose is to verify that all integrated components of the application work together as intended, and meet the requirements defined in the <a href="../srs/">SRS</a>. This ensures a seamless and reliable user experience across all key functions.</p>
+<h3 id="23-test-motivators">2.3 Test Motivators</h3>
+<p>The motivation for unit testing is to ensure that individual components function correctly in isolation, while integration testing validates the seamless interaction of these components within the overall system. Both are critical to ensuring reliability and robustness before release.</p>
+<h2 id="3-target-test-items">3. Target Test Items</h2>
+<ul>
+<li>Server backend (and APIs)</li>
+<li>Database Interaction</li>
+</ul>
+<h2 id="4-outline-of-planned-tests">4. Outline of Planned Tests</h2>
+<h3 id="41-outline-of-test-inclusions">4.1 Outline of Test Inclusions</h3>
+<p><em>Backend: Spring Boot Application</em>:</p>
+<ul>
+<li>Unit testing</li>
+<li>Integration testing</li>
+<li>Api testing</li>
+</ul>
+<p><em>Database (PostgreSQL)</em></p>
+<ul>
+<li>Integration Tests</li>
+<li>Data Consistency Tests</li>
+</ul>
+<h3 id="42-outline-of-other-candidates-for-potential-inclusion">4.2 Outline of Other Candidates for Potential Inclusion</h3>
+<p>n/a</p>
+<h3 id="43-outline-of-test-exclusions">4.3 Outline of Test Exclusions</h3>
+<p>Because of time and resource constraints we will not do:</p>
+<ul>
+<li>Stress test</li>
+<li>Load/performance tests</li>
+<li>Usability tests</li>
+<li>any further tests</li>
+</ul>
+<h2 id="5-test-approach">5. Test Approach</h2>
+<h3 id="51-testing-techniques-and-types">5.1 Testing Techniques and Types</h3>
+<h4 id="511-unit-testing">5.1.1 Unit Testing</h4>
+<p>Unit testing ensures, that the tested sourcecode works as expected. Therefore small parts of the sourcecode are tested independently.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Technique Objective</td>
+<td>Ensure that the implemented code works as expected</td>
+</tr>
+<tr>
+<td>Technique</td>
+<td>Implement test methods using the JUnit 5 Framework (Backend)</td>
+</tr>
+<tr>
+<td>Oracles</td>
+<td>Test execution logs results to the command line, logging manually ( for now, to be changed)</td>
+</tr>
+<tr>
+<td>Required Tools</td>
+<td>JUnit 5 dependencies in our Backend</td>
+</tr>
+<tr>
+<td>Success Criteria</td>
+<td>All tests pass. Coverage is above 66% (2/3, Backend)</td>
+</tr>
+<tr>
+<td></td>
+<td>CI/CD Pipeline: Github Actions</td>
+</tr>
+<tr>
+<td>Special Considerations</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="512-integration-testing-api-testing">5.1.2 Integration Testing (API Testing)</h4>
+<p>Api Testing is part of integration testing. Integration tests test multiple modules of an application together. The main goal of Api testing is to ensure, that the provided Apis of the Backend behave as expected.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Technique Objective</td>
+<td>Test API-Requests</td>
+</tr>
+<tr>
+<td>Technique</td>
+<td>Usage of Mock-API-Requests</td>
+</tr>
+<tr>
+<td>Oracles</td>
+<td>Test execution logs results to the command line, logging manually ( for now, to be changed)</td>
+</tr>
+<tr>
+<td>Required Tools</td>
+<td>JUnit</td>
+</tr>
+<tr>
+<td>Success Criteria</td>
+<td>All tests pass. Coverage is above 66% (2/3)</td>
+</tr>
+<tr>
+<td></td>
+<td>CI/CD Pipeline: Github Actions</td>
+</tr>
+<tr>
+<td>Special Considerations</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-entry-and-exit-criteria">6. Entry and Exit Criteria</h2>
+<h3 id="61-test-plan">6.1 Test Plan</h3>
+<h4 id="611-test-plan-entry-criteria">6.1.1 Test Plan Entry Criteria</h4>
+<p>n/a</p>
+<h4 id="612-test-plan-exit-criteria">6.1.2 Test Plan Exit Criteria</h4>
+<p>n/a</p>
+<h2 id="7-deliverables">7. Deliverables</h2>
+<h2 id="71-test-evaluation-summaries">7.1 Test Evaluation Summaries</h2>
+<p>The current version of the project includes only backend testing, more specifically JUnit 5 tests with mocking for the Spring boot backend classes. The final version of the project is so planned, so that integration tests are also implemented
+and the automation is realised through the implementation of CI/CD Pipelines. These would eventually be responsible for the evaluation of the tests, which would take place every time changes are pushed into the 
+code repository, GitHub Actions being the chosen platform for the workflow.</p>
+<p>At this point of the project Unit tests can be manually and locally evaluated through either starting the tests from the IDE oder executing the following command: <code>mvn test</code></p>
+<p>As shown in the screenshot below, the IDE specifies the number of passed tests as well as gives logs and where applicable warnings/error messages. 
+The content of the currently implemented test classes, for example the OsmControllerTest Class, can be explained as followed: </p>
+<p>The OsmControllerTest class is a unit test designed to validate the functionality of the OsmController class, specifically its getNodes method. It uses Mockito to mock the OsmService dependency, allowing for controlled testing of the controller's behavior without relying on the actual service implementation. The test class includes two test cases: one that verifies a successful response when valid parameters (an amenity type and a list of coordinates) are provided, ensuring that the response status is 200 and the body contains the expected JSON data; and another that checks the handling of invalid coordinates, asserting that the response status is 400 and the body contains an appropriate error message. The setup method initializes the mocks before each test is executed.</p>
+<p><img alt="OsmControllerTestScreenshot" src="https://github.com/green-sprout/docs/blob/main/docs/assets/general/TestScreenshot.PNG" /></p>
+<h2 id="72-reporting-on-test-coverage">7.2 Reporting on Test Coverage</h2>
+<p>For reporting our test coverage, we currently rely on manual test reports.</p>
+<h2 id="73-perceived-quality-reports">7.3 Perceived Quality Reports</h2>
+<p>Perceived quality reports for the GreenSprout application will focus on the results of the JUnit tests and integration tests conducted during the development process. If any reports are generated (when applicable), they will be generated manually, providing the development team with a clear overview of the application's quality and stability. The analysis will include a review of incidents related to test failures and any associated change requests, ensuring that the team can address quality concerns effectively.</p>
+<h2 id="74-incident-logs-and-change-requests">7.4 Incident Logs and Change Requests</h2>
+<p>Any noticed errors during the execution of tests either locally or through triggering the CI/CD Pipeline will be immediately reported to team members, and fixing the mistakes will be added as a ticket for the following sprint.</p>
+<h2 id="75-smoke-test-suite-and-supporting-test-scripts">7.5 Smoke Test Suite and Supporting Test Scripts</h2>
+<p>The smoke test suite for the GreenSprout application will consist of a set of automated tests designed to verify the core functionalities of the application's backend. Supporting test scripts will be developed using JUnit and Mockito for unit testing, along with integration tests to ensure that different components of the application work together seamlessly. The smoke test suite will be executed as part of the CI/CD pipeline using GitHub Actions, allowing for immediate feedback on the stability of new builds and helping to detect regressions in product quality early in the development process.</p>
+<h2 id="8-testing-workflow">8. Testing Workflow</h2>
+<p>Currently, the Test-Workflow is as follows.:
+1) Local testing in the IDE before a commit - Results are manually logged</p>
+<p>Ideally, the Test-Workflow will eventually take the following form or be similar to it.:
+1) Local testing in the IDE
+2) Commit and Push triggers build and test execption in the CI/CD Pipeline
+3) Each PR triggers the pipeline (build and test)
+4) Before the automated deployment the build and test stages are executed</p>
+<h2 id="9-environmental-needs">9. Environmental Needs</h2>
+<h3 id="91-base-system-hardware">9.1 Base System Hardware</h3>
+<p>The following table sets forth the system resources for the test effort presented in this Test Plan.</p>
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th style="text-align: center;">Quantity</th>
+<th>Name and Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CI/CD server</td>
+<td style="text-align: center;">1</td>
+<td>Github Actions</td>
+</tr>
+<tr>
+<td>local test machine</td>
+<td style="text-align: center;">1</td>
+<td>notebook (Jonas,Safae,Samuel,Paula,Valentin)</td>
+</tr>
+<tr>
+<td>Android test device</td>
+<td style="text-align: center;">1</td>
+<td>Android device (Jonas,Safae,Samuel,Paula,Valentin)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="92-base-software-elements-in-the-test-environment">9.2 Base Software Elements in the Test Environment</h3>
+<p>The following base software elements are required in the test environment for this Test Plan.</p>
+<table>
+<thead>
+<tr>
+<th>Software Element Name</th>
+<th>Type and Other Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IntelliJ</td>
+<td>Test Runner / IDE</td>
+</tr>
+<tr>
+<td>JUnit  5</td>
+<td>Unit testing library</td>
+</tr>
+</tbody>
+</table>
+<h3 id="93-productivity-and-support-tools">9.3 Productivity and Support Tools</h3>
+<p>The following tools will be employed to support the test process for this Test Plan.</p>
+<table>
+<thead>
+<tr>
+<th>Tool Category or Type</th>
+<th>Tool Brand Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Repository</td>
+<td><a href="http://github.com/">github.com</a></td>
+</tr>
+<tr>
+<td>CI/CD Service</td>
+<td><a href="https://docs.github.com/en/actions/writing-workflows/quickstart">Github Actions</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="10-responsibilities-staffing-and-training-needs">10. Responsibilities, Staffing, and Training Needs</h2>
+<h3 id="101-people-and-roles">10.1 People and Roles</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Person Assigned</th>
+<th>Specific Responsibilities or Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Test Manager</td>
+<td style="text-align: center;">Safae, Jonas</td>
+<td>Provides management oversight.</td>
+</tr>
+<tr>
+<td>Test Designer</td>
+<td style="text-align: center;">Safae, Paula</td>
+<td>Defines the technical approach to the implementation of the test effort.</td>
+</tr>
+<tr>
+<td>Test System Administrator</td>
+<td style="text-align: center;">Valentin, Samuel</td>
+<td>Ensures test environment and assets are managed and maintained.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="102-staffing-and-training-needs">10.2 Staffing and Training Needs</h3>
+<p>n/a</p>
+<h2 id="11-iteration-milestones">11. Iteration Milestones</h2>
+<p>We want to keep over 66% code coverage.</p>
+<h2 id="12-risks-dependencies-assumptions-and-constraints">12. Risks, Dependencies, Assumptions, and Constraints</h2>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Mitigation Strategy</th>
+<th>Contingency (Risk is realized)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code has lots of side effects</td>
+<td>Refactor code (Clean Code principles)</td>
+<td>publish new refactored tests</td>
+</tr>
+<tr>
+<td>Test Runner is not able to execute tests</td>
+<td>Use standard libraries which include working Test Runner</td>
+<td>fix test execution configuration</td>
+</tr>
+<tr>
+<td>UI tests fail</td>
+<td>Refactor test</td>
+<td>publish refactored test and restart</td>
+</tr>
+</tbody>
+</table>
+<h2 id="13-management-process-and-procedures">13. Management Process and Procedures</h2>
+<p>n/a</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 - 2025 Green Sprout
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/green-sprout" target="_blank" rel="noopener" title="Link to our GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/green-sprout/blog/discussions" target="_blank" rel="noopener" title="Our Blog" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3v18h18V3zm15 15H6v-1h12zm0-2H6v-1h12zm0-4H6V6h12z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections", "navigation.expand"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
